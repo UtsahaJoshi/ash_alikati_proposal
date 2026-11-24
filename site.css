@@ -99,6 +99,11 @@ h3 { line-height: 1.25; font-size: 1.22rem; letter-spacing: -.015em; }
 .story figcaption { color: var(--muted); font-size: .82rem; margin-top: .4rem; }
 .story p:not(.eyebrow), .production p:not(.eyebrow) { color: var(--muted); }
 .story p + p { margin-top: .8rem; }
+.impact-context { display: grid; grid-template-columns: minmax(11.5rem,.52fr) minmax(0,1fr); align-items: center; gap: 1rem 2rem; padding: 1.25rem 0; border-block: 1px solid #98513648; }
+.impact-stat { display: flex; align-items: center; gap: .8rem; }
+.impact-stat strong { color: var(--dark-accent); font: 500 clamp(2.9rem,6vw,4.35rem)/.9 var(--display); letter-spacing: -.055em; }
+.impact-stat span { max-width: 11rem; font-weight: 700; line-height: 1.25; }
+.impact-context .caption { margin-top: .3rem; }
 .activation { display: grid; grid-template-columns: 1.3fr 1fr; gap: 1rem 2rem; padding: 1.7rem 1.65rem; background: #20232b; color: var(--white); border-left: .23rem solid #c37e55; border-radius: .15rem; margin: 1.4rem 0 1.1rem; }
 .activation h3 { color: var(--amber); margin-bottom: .44rem; font: 500 2rem/1.1 var(--display); }
 .activation > p { align-self: center; font-size: .93rem; }
@@ -147,7 +152,7 @@ summary { cursor: pointer; width: fit-content; color: var(--amber); font-weight:
   .hero::before { background: linear-gradient(90deg,#111722ef,#11172277 64%,#1117223f), linear-gradient(0deg,#111722e8 4%,transparent 76%); }
   .ask, .story, .production { grid-template-columns: 1fr; gap: 1.25rem; }
   .tier-grid { grid-template-columns: 1fr; }
-  .activation { grid-template-columns: 1fr; gap: .65rem; }
+  .activation, .impact-context { grid-template-columns: 1fr; gap: .65rem; }
 }
 @media (max-width: 34rem) {
   .shell { width: calc(100% - 2.25rem); }
